@@ -1,5 +1,4 @@
 /node_modules
 /coverage
-/build
 id_travis_rsa*
 /.vscode

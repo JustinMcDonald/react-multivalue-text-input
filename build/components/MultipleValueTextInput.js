@@ -178,10 +178,12 @@ var MultipleValueTextInput = function (_Component) {
 			    onItemAdded = _props3.onItemAdded,
 			    onItemDeleted = _props3.onItemDeleted,
 			    className = _props3.className,
-			    labelClassName = _props3.labelClassName;
+			    labelClassName = _props3.labelClassName,
+			    forwardedProps = _props3.forwardedProps;
 
 
-			var forwardedProps = omit(this.props, ['shouldAddOnBlur', 'charCodes']);
+			delete forwardedProps.shouldAddOnBlur;
+			delete forwardedProps.charCodes;
 
 			var values = this.state.values && this.state.values.length ? this.state.values : this.props.values;
 			var valueDisplays = values.map(function (v) {

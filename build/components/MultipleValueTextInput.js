@@ -8,6 +8,10 @@ var _extends2 = require('babel-runtime/helpers/extends');
 
 var _extends3 = _interopRequireDefault(_extends2);
 
+var _objectWithoutProperties2 = require('babel-runtime/helpers/objectWithoutProperties');
+
+var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+
 var _getPrototypeOf = require('babel-runtime/core-js/object/get-prototype-of');
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -179,7 +183,7 @@ var MultipleValueTextInput = function (_Component) {
 			    onItemDeleted = _props3.onItemDeleted,
 			    className = _props3.className,
 			    labelClassName = _props3.labelClassName,
-			    forwardedProps = _props3.forwardedProps;
+			    forwardedProps = (0, _objectWithoutProperties3.default)(_props3, ['placeholder', 'label', 'name', 'deleteButton', 'onItemAdded', 'onItemDeleted', 'className', 'labelClassName']);
 
 
 			delete forwardedProps.shouldAddOnBlur;

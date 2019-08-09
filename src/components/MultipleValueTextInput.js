@@ -104,7 +104,7 @@ class MultipleValueTextInput extends Component {
 			onItemDeleted,
 			className,
 			labelClassName,
-			forwardedProps
+			...forwardedProps
 		} = this.props;
 
 		delete forwardedProps.shouldAddOnBlur;

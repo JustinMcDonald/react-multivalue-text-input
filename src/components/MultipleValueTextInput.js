@@ -107,7 +107,8 @@ class MultipleValueTextInput extends Component {
 		} = this.props;
 
     const forwardedProps = omit(this.props, [
-      'shouldAddOnBlur'
+      'shouldAddOnBlur',
+      'charCodes'
     ]);
 
 		const values = this.state.values && this.state.values.length
